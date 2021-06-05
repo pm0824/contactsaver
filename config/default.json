@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://prachi:prachim@cluster0.qkgl9.mongodb.net/contacts"
+    "mongoURI": "mongodb+srv://prachi:prachim@cluster0.qkgl9.mongodb.net/contacts",
+    "jwtSecret": "secret"
 }
