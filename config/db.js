@@ -11,7 +11,7 @@ const connectDB = ()=>{
         useFindAndModify: false         //To avoid some warnings
     }).then(()=>console.log('MongoDB connected'))
     .catch(err=>{
-        console.error(err.message,"aaa");
+        console.error("Database error",err.message);
         process.exit(1);                //exit with failure
     });
 };
