@@ -1,6 +1,9 @@
 {
   "name": "contactsaver-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "description": "Contact Manager App",
   "main": "server.js",
   "scripts": {
