@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-	--primary-color: #003699;
+	--primary-color: #6a1b9a;
 	--dark-color: #333333;
 	--light-color: #f4f4f4;
 	--danger-color: #dc3545;
@@ -43,6 +43,7 @@ img {
 /* Utilities */
 .container {
 	max-width: 1100px;
+	min-height: 85vh;
 	margin: auto;
 	overflow: hidden;
 	padding: 0 2rem;
@@ -332,7 +333,8 @@ button {
 
 .form-container {
 	max-width: 500px;
-	margin: 2rem auto;
+	height: 78vh;
+	margin: 1rem auto;
 	overflow: hidden;
 	padding: 0 0.8rem;
 }
@@ -398,6 +400,13 @@ table th {
 .item-exit-active {
 	opacity: 0;
 	transition: opacity 1000ms ease-in;
+}
+
+footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
 
 /* Mobile Styles */

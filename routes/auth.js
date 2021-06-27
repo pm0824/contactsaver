@@ -46,7 +46,7 @@ router.post('/',[
 
         const isMatch = await bcrypt.compare(password,user.password);
         if(!isMatch){
-            return res.status(500).json({msg:"pwd invalid"});
+            return res.status(500).json({msg:"Password invalid"});
         }
 
         const payload = {
