@@ -23,7 +23,7 @@ export default (state, action) => {
         case ADD_CONTACT:
             return {
                 ...state,
-                contacts: [...state.contacts, action.payload],   //cannot modify contacts in state so append to previous
+                contacts: [action.payload, ...state.contacts],   //cannot modify contacts in state so append to previous
                 loading: false
             }
         case UPDATE_CONTACT:
@@ -37,7 +37,7 @@ export default (state, action) => {
         case DELETE_CONTACT:
             return {
                 ...state,
-                contacts: state.contacts.filter(contact => contact.id !== action.payload),
+                contacts: state.contacts.filter(contact => contact._id !== action.payload),
                 loading: false
             }
         case FILTER_CONTACTS:
